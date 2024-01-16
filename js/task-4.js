@@ -11,8 +11,8 @@ function submitHandler(event) {
   if (email.value === "" || password.value === "") {
     alert("All form fields must be filled in!");
   } else {
-    profile.email = email.value;
-    profile.password = password.value;
+    profile.email = email.value.trim();
+    profile.password = password.value.trim();
 
     console.log(profile);
   }
